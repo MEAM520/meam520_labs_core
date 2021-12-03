@@ -119,6 +119,7 @@ class ObjectDetector:
 
     def check_tag_visibility(self,tag):
         (name, T) = tag
+        # return ('tag6' in name or 'tag0' in name or 'tag12' in name)
         z = T[:3,2] # tag frame
         x = T[:3,3] # tag position
         ray = x / np.linalg.norm(x)

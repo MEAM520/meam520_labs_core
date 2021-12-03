@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <launch>
 
-  <arg name="team" />
   <arg name="block_delay" default="5" />
   <arg name="rviz" default="false" />
   <arg name="rvizconfig" default="$(find meam520_labs)/config/final.rviz" />
@@ -9,6 +8,7 @@
   <arg name="y" value="-.978" if="$(eval arg('team') == 'red')"/>
   <arg name="y" value=".978" if="$(eval arg('team') == 'blue')"/>
 
+  <arg name="team" />
   <param name="team" value="$(arg team)" />
 
   <!-- BASIC ENVIRONMENT -->
