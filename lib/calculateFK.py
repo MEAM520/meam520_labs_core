@@ -36,6 +36,34 @@ class FK():
 
     # feel free to define additional helper methods to modularize your solution
 
+    def get_axis_of_rotation(self, q):
+        """
+        INPUT:
+        q - 1x7 vector of joint angles [q0, q1, q2, q3, q4, q5, q6]
+
+        OUTPUTS:
+        axis_of_rotation_list: - 3x7 np array of unit vectors describing the axis of rotation for each joint in the
+                                 world frame
+
+        """
+        # STUDENT CODE HERE
+        #XXX: This is new and goes with lab 2
+        return()
+    
+    def compute_Ai(self, q):
+        """
+        INPUT:
+        q - 1x7 vector of joint angles [q0, q1, q2, q3, q4, q5, q6]
+
+        OUTPUTS:
+        Ai: - 4x4 list of np array of homogenous transformations describing the FK of the robot. Transformations are not
+              necessarily located at the joint locations
+        """
+        # STUDENT CODE HERE
+        #XXX: This is new and goes with lab 2
+
+        return()
+    
 if __name__ == "__main__":
 
     fk = FK()
