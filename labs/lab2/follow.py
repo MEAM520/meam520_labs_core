@@ -185,7 +185,7 @@ if __name__ == "__main__":
 
     # reset arm
     print("resetting arm...")
-    arm.move_to_position(arm.neutral_position())
+    arm.safe_move_to_position(arm.neutral_position())
 
     # start tracking trajectory
     JD.active = True

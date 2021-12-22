@@ -126,7 +126,7 @@ if __name__ == "__main__":
             if i < len(configurations) - 1:
                 input("Press Enter to move to next configuration...")
 
-        arm.move_to_position(q)
+        arm.safe_move_to_position(q)
 
     elif sys.argv[1] == 'IK':
 
