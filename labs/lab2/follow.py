@@ -23,6 +23,7 @@ class JacobianDemo():
     point_pub = rospy.Publisher('/vis/trace', geometry_msgs.msg.PointStamped, queue_size=10)
     counter = 0
     x0 = np.array([0.307, 0, 0.487]) # corresponds to neutral position
+    last_iteration_time = None
 
     ##################
     ## TRAJECTORIES ##
@@ -139,8 +140,17 @@ class JacobianDemo():
                 # Velocity Inverse Kinematics
                 dq = IK_velocity(q,v,np.array([np.nan,np.nan,np.nan]))
 
-                arm.exec_position_cmd(q + self.dt * dq)
-
+                # Get the correct timing to update with the robot
+                if self.last_iteration_time == None:
+                    self.last_iteration_time = time_in_seconds()
+                
+                self.dt = time_in_seconds() - self.last_iteration_time
+                self.last_iteration_time = time_in_seconds()
+                
+                new_q = q + self.dt * dq
+                
+                arm.safe_set_joint_positions_velocities(new_q, dq)
+                
                 # Downsample visualization to reduce rendering overhead
                 self.counter = self.counter + 1
                 if self.counter == 10:

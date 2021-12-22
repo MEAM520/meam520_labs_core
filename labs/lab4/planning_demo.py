@@ -31,7 +31,7 @@ if __name__ == "__main__":
     index = int(sys.argv[1])-1
     print("Running test "+sys.argv[1])
     print("Moving to Start Position")
-    arm.move_to_position(starts[index])
+    arm.safe_move_to_position(starts[index])
     map_struct = loadmap("../../maps/"+mapNames[index] + ".txt")
     print("Map = "+ mapNames[index])
 
@@ -52,5 +52,5 @@ if __name__ == "__main__":
     input("Press Enter to Send Path to Arm")
 
     for joint_set in path:
-        arm.move_to_position(joint_set)
+        arm.safe_move_to_position(joint_set)
     print("Trajectory Complete!")

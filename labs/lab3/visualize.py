@@ -140,7 +140,7 @@ if __name__ == "__main__":
 
         if success:
             print("Solution found in {time:2.2f} seconds ({it} iterations).".format(time=dt,it=len(rollout)))
-            arm.move_to_position(q)
+            arm.safe_move_to_position(q)
         else:
             print('IK Failed for this target using this seed.')
 

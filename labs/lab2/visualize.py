@@ -95,7 +95,7 @@ if __name__ == "__main__":
     # Try editing the configurations list above to do more testing!
     for i, q in enumerate(configurations):
         print("Moving to configuration " + str(i) + "...")
-        arm.move_to_position(q)
+        arm.safe_move_to_position(q)
         # iterate thru each joint, activating each, one at a time
         for j in range(7):
             show_all_velocity(q,j)

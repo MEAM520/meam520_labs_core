@@ -122,7 +122,7 @@ if __name__ == "__main__":
         # Try editing the configurations list above to do more testing!
         for i, q in enumerate(configurations):
             print("Moving to configuration " + str(i) + "...")
-            arm.move_to_position(q)
+            arm.safe_move_to_position(q)
             if i < len(configurations) - 1:
                 input("Press Enter to move to next configuration...")
 
@@ -137,7 +137,7 @@ if __name__ == "__main__":
             show_target(target)
             solutions = ik.panda_ik(target)
             q = solutions[0,:] # choose the first of multiple solutions
-            arm.move_to_position(q)
+            arm.safe_move_to_position(q)
             if i < len(targets) - 1:
                 input("Press Enter to move to next target...")
 

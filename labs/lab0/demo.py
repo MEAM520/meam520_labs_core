@@ -18,14 +18,14 @@ from core.interfaces import ArmController
 rospy.init_node('demo')
 
 arm = ArmController()
-arm.set_arm_speed(.2)
+arm.set_arm_speed(0.2)
 
 arm.close_gripper()
 
 q = arm.neutral_position()
-arm.move_to_position(q)
+arm.safe_move_to_position(q)
 arm.open_gripper()
 
 q = np.array([0,-1 ,0,-2,0,1,1]) # TODO: try changing this!
-arm.move_to_position(q)
+arm.safe_move_to_position(q)
 arm.close_gripper()
