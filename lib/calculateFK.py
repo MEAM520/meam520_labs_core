@@ -27,7 +27,7 @@ class FK():
 
         # Your code starts here
 
-        jointPositions = np.zeros((7,3))
+        jointPositions = np.zeros((8,3))
         T0e = np.identity(4)
 
         # Your code ends here
