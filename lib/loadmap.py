@@ -11,9 +11,8 @@ from collections import namedtuple
 def loadmap(filename):
     """
     :param filename: string with the location of the map file
-    :return: map struct with boundary and obstacles element
+    :return: map struct with obstacle elements
                 map.obstacles [Nx6] array of the obstacle boundaries
-                map.boundary [6] array of the map boundary
     """
     obstacles = []
     with open(filename, 'r') as reader:
@@ -21,10 +20,10 @@ def loadmap(filename):
         line = reader.readline()
         while line != '':  # The EOF char is an empty string
             line = reader.readline()
-            # Check to see if first character is b for boundary or block
+            # Check to see if first character is b for block
             if len(line) > 0 and line[0] == 'b':
                 words = line.split()
-                # Check if block our boundary
+                # Check if block 
                 if words[0] == "block":
                     # Append to obstacles array or set to obstacles array
                     if len(obstacles) == 0:
