@@ -1,7 +1,7 @@
 # Installation Guide for New Linux users
 ### Date Created: 01/28/2022
 
-Maintainers: Contact FY2021 TAs
+Maintainers: Contact Current MEAM520 TAs
 
 # Native Install Instructions (NOT REQUIRED FOR VIRTUAL MACHINE)
 ---

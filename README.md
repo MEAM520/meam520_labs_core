@@ -1,7 +1,7 @@
 # MEAM520: Introduction to Robotics
 ### Date Created: 08/26/2021
 
-Maintainers: Contact FY2021 TAs
+Maintainers: Contact current MEAM520 TAs
 
 # Subdirectory Structure:
 - `core`: contains support code we provide to you, such as helper functions and interfaces for interacting with the robot (either simulated or real!)
