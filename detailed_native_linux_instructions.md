@@ -23,7 +23,7 @@ You can follow the standard installation instructions for [Ubuntu 20.04](https:/
 This link will walk you through three main steps:
 1. Making a bootable Ubuntu USB device, note a common mistake when doing this for the first time is that making a bootable media is not the equivalent to just copying the downloaded Ubuntu image onto a USB. Please follow the instructions in the link provided.
 2. Next you will need to enter your BIOS to select the USB as the bootable drive
-3. Once selected you will be taken through a series of GUI windows which will allow you to install and setup your new Ubuntu 20.04 maching.
+3. Once selected you will be taken through a series of GUI windows which will allow you to install and setup your new Ubuntu 20.04 machine.
 
 For specific details please follow the instructions provided in the link above. 
 
@@ -38,7 +38,7 @@ If you have not used ROS before a great place to start is with the [ROS Tutorial
 
 To get started using this development environment, you must first follow the instructions to install [panda_simulator](https://github.com/justagist/panda_simulator/tree/noetic-devel), a Gazebo-based simulator for the Franka Emika Panda robot.
 
-We wil copy the instructions from that git repository here, for more details please see that resource.  
+We will copy the instructions from that git repository here, for more details please see that resource.  
 
 0. Install setup things necessary for later steps
 

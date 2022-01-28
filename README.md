@@ -80,7 +80,7 @@ If you have a GitHub account you can skip step 1 and move onto step 2: cloning a
 - Select signup
 - follow the prompts to make an account using your Penn email.
 - login into your account.
-- Go to the top right corner of your account and select the circle icon, navigate to settings, on the left column you will see a list of opitions, select SSH and GPG keys.
+- Go to the top right corner of your account and select the circle icon, navigate to settings, on the left column you will see a list of options, select SSH and GPG keys.
 - Next open a terminal in the Virtual Machine (Ctrl-Alt-t), and type the following command:
 ```
 $ ssh-keygen -t ed25519 -C "your_email@seas.upenn.edu"
@@ -148,7 +148,7 @@ GitHub is an example of a location which stores remote git repositories and acts
 To see that sure your local git repository is setup correctly type the following command:
 ```
 $ cd meam520_labs
-$ git reomte -v
+$ git remote -v
 ```
 
 You should see:
