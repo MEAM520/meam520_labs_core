@@ -26,7 +26,7 @@ The simulator must be run on Ubuntu 20.04 with ROS noetic installed. You can fol
 
 ## panda_simulator installation
 
-To get started using this development environment, you must first follow the instructions to install [panda_simulator](https://github.com/justagist/panda_simulator/tree/noetic-devel), a Gazebo-based simulator for the Franka Emika Panda robot. The only difference is that you will name the catkin workspace `meam520_ws` to avoid conflicts with other projects.
+To get started using this development environment, you must first follow the instructions to install [panda_simulator](https://github.com/justagist/panda_simulator/tree/noetic-devel), a Gazebo-based simulator for the Franka Emika Panda robot. The only difference is that you will name the catkin workspace `meam520_ws` to avoid conflicts with other projects. If you need more detailed assistance with this please check out the [detailed instructions](https://github.com/MEAM520/meam520_labs_core/blob/master/detailed_native_linux_instructions.md) for how to go through this process.
 
 The instructions specify to use `catkin build`, but we recommend building with `catkin_make_isolated` instead.
 
