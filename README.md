@@ -9,14 +9,16 @@ Maintainers: Contact current MEAM520 TAs
 - `labs`: will contain test scripts that use the algorithms you implement in `lib` and the tools we provide in `core` to control the robot and achieve tasks
 - `ros`: contains code necessary to launch the simulator. You won't need to work in this directory.
 
-`lib` and `labs` will be the main places you are working this semester!
+`lib` and `labs` will be the main places you work this semester!
 
 
 # Native Install Instructions (NOT REQUIRED FOR VIRTUAL MACHINE)
 ---
 **NOTE**
 
-These installation instructions are for the TAs when setting up the Virtual Machine, and can also be followed by experienced users to set up the lab environment on a native Ubuntu Linux installation. These steps do not need to be followed by students using the Virtual Machine. For all other users, skip to the section on forking this repo.
+These installation instructions are for the TAs when setting up the Virtual Machine, and can also be followed by experienced users to set up the lab environment on a native Ubuntu Linux installation. These steps do not need to be followed by students using the Virtual Machine. For all other users, skip to the section on forking this repo (Get the Code).
+
+Again, this is not recommended for students of MEAM520, who instead are encouraged to use the Virtual Machine image provided.
 
 ---
 
@@ -68,14 +70,14 @@ _TIMEOUT_SIGTERM = 2.0 #seconds
 ```
 to `2.0` and `1.0` respectively.
 
-## Get the Code
+# Get the Code
 Git is a code versioning tool, and can be a powerful resource. 
 This year we will use git in a limited fashion to ease the dissemination of code. 
 So that each student can have their own individual private work we are going to have you work on a copy of the original repository in your own GitHub account. 
 
 If you have a GitHub account you can skip step 1 and move onto step 2: cloning a new private repository.
 
-### Setting up a gitHub account
+## Setting up a gitHub account
 - Go to: https://github.com
 - Select signup
 - follow the prompts to make an account using your Penn email.
@@ -94,7 +96,7 @@ $ cat id_ed25519.pub
  - In your GitHub account, under ``Settings'', select ``SSH and GPG Keys'', ``New SSH-key'', name the key and copy the entire string on your terminal into the appropriate box. (To copy things off of the terminal highlight the text and click Ctrl-Shift-C. You may also need to enable Devices > Shared Clipboard > Bidirectional in the VirtualBox toolbar.) You have now made it possible to clone your private repository to your virtual machine.
 - Note: GitHub has an educational developers pack which you are eligible for as a Penn student. To learn more about this and to register your account go to: https://education.github.com/discount_requests/student_application. To expedite this process it is important that you use your Penn email to make your account (there is a verification process). 	
 
-### Cloning a new private repository:
+## Cloning a new private repository
 Each of you will be making a deep copy of the TA existing repository which contains code you will use throughout the semester, e.g.  unimplemented functions, that you implement for a lab.
 We will outline a set of steps here so that you are able to keep your code private on your own GitHub account, and get updates as the TAs make updates to the codes, e.g. as new assignments are released. 
 The following steps allow you to copy the *meam520_labs* code base:
@@ -125,8 +127,9 @@ To check that this step is executed correctly go to your GitHub account and relo
 ```
 $ cd ..
 $ rm -rf meam520_labs.git
-```    
-        Now if you type *ls* in *~/meam520\_ws/src* you should not see a directory called *meam520\_labs.git*
+```
+
+Now if you type *ls* in *~/meam520\_ws/src* you should not see a directory called *meam520\_labs.git*
 
 7. We will clone your new private repo as follows (you can get the link for the new repo from the top right corner in the green box labeled Code): 
 
@@ -139,7 +142,7 @@ Note you need to replace **YOUR_USERNAME** with your GitHub username.
 
 8. You should be able to type *ls* in your terminal and see a new directory created called meam520_labs*, which now points to *your* github repository.
 
-### Getting code updates from the TAs:
+## Getting code updates from the TAs
 
 Now we are going to make it possible for you to get updates from the TAs main repository. First it is important to understand that git is a tool which is used locally to keep a history of your code.
 To ensure that code is backed up to an additional location outside of your computer, and to collaborate with others, a *remote* is setup.
