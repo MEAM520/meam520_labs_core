@@ -184,9 +184,7 @@ Now that an upstream is set we will ask that you periodically use the following 
 git pull upstream master
 ```
 
-    This will ensure that you get updates when TAs make changes. You should run this command before starting each new lab. We will also post on Piazza if any changes need to be released during a given lab. 
-    
-    You can also use your git repository to make it easier to collaborate with your lab group as you work on the assignments (optional but helpful!). To learn more about the basics of git, check out https://guides.github.com/introduction/git-handbook/. 
+This will ensure that you get updates when TAs make changes. You should run this command before starting each new lab. We will also post on Piazza if any changes need to be released during a given lab. You can also use your git repository to make it easier to collaborate with your lab group as you work on the assignments (optional but helpful!). To learn more about the basics of git, check out https://guides.github.com/introduction/git-handbook/. 
 
 ## Update Python path to find core module
 
